@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links dos Vídeos</title>
+    <style>
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --primary: #60a5fa;
+        --primary-dark: #2563eb;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .card {
+        width: min(90vw, 700px);
+        background: var(--card);
+        border-radius: 16px;
+        padding: 32px 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        text-align: center;
+      }
+
+      .links {
+        display: grid;
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      a.button {
+        display: block;
+        text-align: center;
+        padding: 18px 22px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      a.button:hover {
+        transform: translateY(-2px);
+        opacity: 0.96;
+      }
+
+      .note {
+        margin-top: 20px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Links dos vídeos</h1>
+
+      <div class="links">
+        <a class="button" href="https://example.com/video-1" target="_blank" rel="noreferrer">
+          Vídeo 1
+        </a>
+        <a class="button" href="https://example.com/video-2" target="_blank" rel="noreferrer">
+          Vídeo 2
+        </a>
+      </div>
+
+      <p class="note">
+        Troque os links de exemplo pelas URLs reais dos seus vídeos.
+      </p>
+    </main>
+  </body>
+</html>
